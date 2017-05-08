@@ -1,0 +1,20 @@
+/* CSS for the TortoiseShell */
+
+
+/* Below CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Above ^^^ CSS Reset */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+
+/* CSS for Header */
