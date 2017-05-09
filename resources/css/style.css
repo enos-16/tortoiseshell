@@ -1,0 +1,119 @@
+/* CSS for the TortoiseShell */
+
+
+/* Below CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Above ^^^ CSS Reset */
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica!important;
+}
+
+
+/* CSS for Content Conatainers */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* CSS for Header */
+
+header {
+  background-image: url(../images/glasses-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 1rem;
+  height: 30rem;
+}
+
+.hdr-sctn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+}
+
+.hdr-sctn img {
+  padding: 1rem 1rem 1rem 2rem;
+  height: 1.5rem;
+}
+
+.hdr-img {
+  display: flex;
+  align-items: center;
+}
+
+.hdr-nav {
+  padding-right: 1rem;
+}
+
+.hdr-sctn nav span {
+  padding: 1rem 1rem;
+}
+
+
+/* CSS for Text Box */
+
+.text-sctn {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 11.5rem;
+  /*Needed to account for the extra 1.5 padding provided by the span*/
+}
+
+.text-box {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  margin-right: -2rem;
+}
+
+.text-box span {
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+
+/* Services Section */
+
+.gallery {
+  background-color: magenta;
+  height: 8rem;
+}
+
+.glry {
+  display: flex;
+  justify-content: center;
+}
+
+.img-box {
+  margin: 3rem 3rem;
+  border: 1px solid black;
+}
+
+.img-box img {
+  width: 5rem;
+  height: auto;
+}
+
+.img-box span {
+  display: block;
+}
+
+
+/* Footer Section */
+
+footer {
+  display: none;
+}
