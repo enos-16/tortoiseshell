@@ -127,7 +127,6 @@ div.paper img {
 .info-box {
   width: 35%;
   padding-right: 5%;
-  border: 1px solid black;
 }
 
 .info-box span {
@@ -146,5 +145,16 @@ div.paper img {
 /* Footer Section */
 
 footer {
-  display: none;
+  padding-top: 5rem;
+}
+
+.ftr-logo {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+.ftr-logo img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
 }
