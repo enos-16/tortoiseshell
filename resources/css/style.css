@@ -1,160 +1,252 @@
-/* CSS for the TortoiseShell */
+  /* CSS for the TortoiseShell */
+  /* Below CSS Reset */
 
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /* Above CSS Reset */
 
-/* Below CSS Reset */
+  html {
+    font-size: 18px;
+    line-height: 1.4;
+    font-family: Helvetica!important;
+  }
+  /* CSS for Content Conatainers */
 
-* {
-  margin: 0;
-  padding: 0;
-}
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* CSS for Header */
 
+  header {
+    background-image: url(../images/glasses-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 1rem;
+    height: 30rem;
+  }
 
-/* Above ^^^ CSS Reset */
+  .hdr-sctn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+    color: white;
+  }
 
-html {
-  font-size: 18px;
-  line-height: 1.4;
-  font-family: Helvetica!important;
-}
+  .hdr-sctn img {
+    padding: 1rem 1rem 1rem 2rem;
+    height: 1.5rem;
+  }
 
+  .hdr-img {
+    display: flex;
+    align-items: center;
+  }
 
-/* CSS for Content Conatainers */
+  .hdr-nav {
+    padding-right: 1rem;
+  }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
+  .hdr-sctn nav span {
+    padding: 1rem 1rem;
+  }
 
+  .hdr-mbl {
+    display: none;
+  }
+  /* CSS for Text Box */
 
-/* CSS for Header */
+  .text-sctn {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 11.5rem;
+    /*Needed to account for the extra 1.5 padding provided by the span*/
+  }
 
-header {
-  background-image: url(../images/glasses-bg.png);
-  background-size: cover;
-  background-position: center;
-  padding-top: 1rem;
-  height: 30rem;
-}
+  .text-box {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    margin-right: -2rem;
+  }
 
-.hdr-sctn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: cadetblue;
-  color: white;
-}
+  .text-box span {
+    background-color: white;
+    padding: 1.5rem 5rem;
+  }
+  /* Services Section */
 
-.hdr-sctn img {
-  padding: 1rem 1rem 1rem 2rem;
-  height: 1.5rem;
-}
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
 
-.hdr-img {
-  display: flex;
-  align-items: center;
-}
+  .img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 8rem;
+    width: 5rem;
+    margin: 3rem;
+    position: relative;
+  }
 
-.hdr-nav {
-  padding-right: 1rem;
-}
+  .img-box img {
+    width: 5rem;
+  }
 
-.hdr-sctn nav span {
-  padding: 1rem 1rem;
-}
+  div.paper img {
+    width: 3.5rem;
+  }
 
+  .img-box span {
+    position: absolute;
+    bottom: 0;
+  }
+  /* CSS for Information Section*/
 
-/* CSS for Text Box */
+  .info {
+    display: flex;
+    justify-content: center;
+  }
 
-.text-sctn {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 11.5rem;
-  /*Needed to account for the extra 1.5 padding provided by the span*/
-}
+  .info-box {
+    width: 35%;
+    padding-right: 5%;
+  }
 
-.text-box {
-  font-weight: bold;
-  font-size: 2rem;
-  line-height: 1.2rem;
-  margin-right: -2rem;
-}
+  .info-box span {
+    width: 10rem;
+    background-color: cadetblue;
+    color: white;
+    padding: 0.5rem 1.25rem;
+    font-weight: bold;
+  }
 
-.text-box span {
-  background-color: white;
-  padding: 1.5rem 5rem;
-}
+  .info-box p {
+    margin-top: 1rem;
+  }
+  /* Footer Section */
 
+  footer {
+    padding-top: 5rem;
+  }
 
-/* Services Section */
+  .ftr-logo {
+    display: flex;
+    align-items: center;
+    background-color: azure;
+  }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-}
+  .ftr-logo img {
+    height: 1.5rem;
+    padding: 4rem 1rem 4rem 4rem;
+  }
+  /* Responsive CSS */
+  /* Tablet Screen and smaller Media Queries */
 
-.img-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  height: 8rem;
-  width: 5rem;
-  margin: 3rem;
-  position: relative;
-}
+  @media only screen and (max-width: 1024px) {
+    /*Header Section*/
+    header {
+      padding-top: 0;
+      height: 22rem;
+    }
+    .text-sctn {
+      padding-top: 6.5rem;
+      margin-right: 2rem;
+    }
+    .text-box span {
+      padding: 0.75rem 4rem;
+      font-size: 1.33rem;
+      margin-right: 2rem;
+    }
+  }
+  /*Phone Screen and smaller Media Queries */
 
-.img-box img {
-  width: 5rem;
-}
+  @media only screen and (max-width: 470px) {
+    /*Header Section*/
+    header {
+      background-position: 20%;
+      height: 17rem;
+    }
+    .text-sctn {
+      padding-top: 9rem;
+      margin: 0;
+    }
+    .text-box {
+      margin: 0;
+      width: 100%;
+    }
+    .text-box span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 0;
+      font-size: 1rem;
+    }
+    /*Services Section*/
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3.77rem 0rem;
+    }
+    .img-box {
+      margin: 1.54rem 0rem;
+      font-size: 0.77rem;
+    }
+    /* Information Section */
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .info-box {
+      width: 100%;
+      padding: 0;
+    }
+    .phil {
+      margin-bottom: 4rem;
+    }
+    .info-box span {
+      display: block;
+      text-align: center;
+      margin: 0;
+      padding: 0.5rem 0rem;
+      width: 100%;
+    }
+    .info-box p {
+      margin-top: 1rem;
+      font-size: 0.77rem;
+    }
+    /* Footer Section */
+    .ftr-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ftr-logo img {
+      height: 1.5rem;
+      padding: 4rem 0rem;
+    }
+    .ftr-logo p {
+      display: none;
+    }
+  }
+  /* Breakpoint Adjustment */
 
-div.paper img {
-  width: 3.5rem;
-}
-
-.img-box span {
-  position: absolute;
-  bottom: 0;
-}
-
-
-/* CSS for Information Section*/
-
-.info {
-  display: flex;
-  justify-content: center;
-}
-
-.info-box {
-  width: 35%;
-  padding-right: 5%;
-}
-
-.info-box span {
-  width: 10rem;
-  background-color: cadetblue;
-  color: white;
-  padding: 0.5rem 1.25rem;
-  font-weight: bold;
-}
-
-.info-box p {
-  margin-top: 1rem;
-}
-
-
-/* Footer Section */
-
-footer {
-  padding-top: 5rem;
-}
-
-.ftr-logo {
-  display: flex;
-  align-items: center;
-  background-color: azure;
-}
-
-.ftr-logo img {
-  height: 1.5rem;
-  padding: 4rem 1rem 4rem 4rem;
-}
+  @media only screen and (max-width: 630px) {
+    .hdr-nav {
+      display: none;
+    }
+    .hdr-mbl {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
